@@ -10,10 +10,10 @@ class intellij($edition='community') {
 
   case $edition {
     'community': { 
-      $edition_real = 'IU'
+      $edition_real = 'IC'
     }
     'ultimate': {
-      $edition_real = 'IC'
+      $edition_real = 'IU'
     }
     default: {
       fail('Class[intellij]: parameter edition must be community or ultimate')
