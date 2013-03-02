@@ -3,7 +3,12 @@
 ## Usage
 
 ```puppet
-include intellij
+class { 'intellij':
+  edition => 'community',
+}
+class { 'intellij':
+  edition => 'ultimate',
+}
 ```
 
 ## Required Puppet Modules
