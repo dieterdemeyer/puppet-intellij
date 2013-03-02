@@ -20,7 +20,7 @@ class intellij($edition='community') {
     }
   }
 
-  package { 'IntelliJ':
+  package { "IntelliJ-IDEA-${edition_real}-12.0.4":
     provider => 'appdmg',
     source   => "http://download.jetbrains.com/idea/idea${edition_real}-12.0.4.dmg",
   }
