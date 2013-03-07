@@ -1,5 +1,7 @@
 # IntelliJ IDEA Puppet Module for Boxen
 
+Install [IntelliJ IDEA](http://www.jetbrains.com/idea/), a code-centric IDE, focused on your productivity.
+
 ## Usage
 
 ```puppet
