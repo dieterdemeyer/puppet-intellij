@@ -1,15 +1,15 @@
-# Public: Install IntelliJ IDEA to /Applications 
+# Public: Install IntelliJ IDEA to /Applications
 #
 # Sample Usage:
 #
 #  class { 'intellij':
 #    edition => 'community',
 #  }
-# 
+#
 class intellij($edition='community') {
 
   case $edition {
-    'community': { 
+    'community': {
       $edition_real = 'IC'
     }
     'ultimate': {
