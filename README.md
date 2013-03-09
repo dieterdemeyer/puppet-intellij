@@ -1,4 +1,4 @@
-# IntelliJ IDEA Puppet Module for Boxen [![Build Status](https://travis-ci.org/boxen/puppet-intellij.png)](https://travis-ci.org/boxen/puppet-intellij)
+# IntelliJ IDEA Puppet Module for Boxen [![Build Status](https://travis-ci.org/boxen/puppet-intellij.png?branch=master)](https://travis-ci.org/boxen/puppet-intellij)
 
 Install [IntelliJ IDEA](http://www.jetbrains.com/idea/), a code-centric IDE, focused on your productivity.
 
