@@ -1,4 +1,4 @@
-# IntelliJ IDEA Puppet Module for Boxen
+# IntelliJ IDEA Puppet Module for Boxen [![Build Status](https://travis-ci.org/boxen/puppet-intellij.png)](https://travis-ci.org/boxen/puppet-intellij)
 
 Install [IntelliJ IDEA](http://www.jetbrains.com/idea/), a code-centric IDE, focused on your productivity.
 
@@ -19,5 +19,8 @@ class { 'intellij':
 
 ## Development
 
-Write code. Run `script/cibuild` to test it. Check the `script`
-directory for other useful tools.
+Write code. Run one of the following tasks to test it:
+* `rake syntax`
+* `rake style`
+* `rake spec`
+* `rake build`
