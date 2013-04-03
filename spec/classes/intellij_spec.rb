@@ -17,8 +17,8 @@ describe 'intellij' do
 
     it { should contain_class('intellij') }
     
-    it { should contain_package('IntelliJ-IDEA-IC-12.0.4').with_provider('appdmg') }
-    it { should contain_package('IntelliJ-IDEA-IC-12.0.4').with_source('http://download.jetbrains.com/idea/ideaIC-12.0.4.dmg') }
+    it { should contain_package('IntelliJ-IDEA-IC-12.1').with_provider('appdmg') }
+    it { should contain_package('IntelliJ-IDEA-IC-12.1').with_source('http://download.jetbrains.com/idea/ideaIC-12.1.dmg') }
   end
 
   context 'with edition => ultimate' do
@@ -26,8 +26,8 @@ describe 'intellij' do
 
     it { should contain_class('intellij') }
 
-    it { should contain_package('IntelliJ-IDEA-IU-12.0.4').with_provider('appdmg') }
-    it { should contain_package('IntelliJ-IDEA-IU-12.0.4').with_source('http://download.jetbrains.com/idea/ideaIU-12.0.4.dmg') }
+    it { should contain_package('IntelliJ-IDEA-IU-12.1').with_provider('appdmg') }
+    it { should contain_package('IntelliJ-IDEA-IU-12.1').with_source('http://download.jetbrains.com/idea/ideaIU-12.1.dmg') }
   end
 
 end
