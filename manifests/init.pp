@@ -4,9 +4,10 @@
 #
 #  class { 'intellij':
 #    edition => 'community',
+#    version => '12.1.2'
 #  }
 #
-class intellij($edition='community') {
+class intellij($edition='community', $version='12.1.2') {
 
   case $edition {
     'community': {
@@ -20,9 +21,9 @@ class intellij($edition='community') {
     }
   }
 
-  package { "IntelliJ-IDEA-${edition_real}-12.1.2":
+  package { "IntelliJ-IDEA-${edition_real}-${version}":
     provider => 'appdmg',
-    source   => "http://download.jetbrains.com/idea/idea${edition_real}-12.1.2.dmg",
+    source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
   }
 
 }

@@ -15,19 +15,33 @@ describe 'intellij' do
   context 'with default parameters' do
     let (:params) { { } }
 
+    version = '12.1.2'
+
     it { should contain_class('intellij') }
 
-    it { should contain_package('IntelliJ-IDEA-IC-12.1.2').with_provider('appdmg') }
-    it { should contain_package('IntelliJ-IDEA-IC-12.1.2').with_source('http://download.jetbrains.com/idea/ideaIC-12.1.2.dmg') }
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IC-12.1.2").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
   end
 
-  context 'with edition => ultimate' do
+  context 'with edition => ultimate and default version' do
     let (:params) { { :edition => 'ultimate' } }
 
+    version = '12.1.2'
+
     it { should contain_class('intellij') }
 
-    it { should contain_package('IntelliJ-IDEA-IU-12.1.2').with_provider('appdmg') }
-    it { should contain_package('IntelliJ-IDEA-IU-12.1.2').with_source('http://download.jetbrains.com/idea/ideaIU-12.1.2.dmg') }
+    it { should contain_package("IntelliJ-IDEA-IU-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IU-#{version}").with_source("http://download.jetbrains.com/idea/ideaIU-#{version}.dmg") }
   end
 
+  context 'with edition => community and version => 12.1.1' do
+    let (:params) { { :edition => 'community', :version => '12.1.1' } }
+
+    version = '12.1.1'
+
+    it { should contain_class('intellij') }
+
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
+  end
 end
