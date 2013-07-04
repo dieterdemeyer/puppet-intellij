@@ -10,7 +10,7 @@ class { 'intellij':
 }
 class { 'intellij':
   edition => 'ultimate',
-	version => '12.1.2'
+	version => '12.1.4'
 }
 ```
 

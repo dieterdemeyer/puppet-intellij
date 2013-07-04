@@ -4,7 +4,7 @@
 #
 #  class { 'intellij':
 #    edition => 'community',
-#    version => '12.1.2'
+#    version => '12.1.4'
 #  }
 #
 class intellij($edition='community', $version='12.1.4') {
