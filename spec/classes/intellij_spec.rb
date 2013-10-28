@@ -19,7 +19,7 @@ describe 'intellij' do
 
     it { should contain_class('intellij') }
 
-    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg_eula') }
     it { should contain_package("IntelliJ-IDEA-IC-12.1.4").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
   end
 
@@ -30,7 +30,7 @@ describe 'intellij' do
 
     it { should contain_class('intellij') }
 
-    it { should contain_package("IntelliJ-IDEA-IU-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IU-#{version}").with_provider('appdmg_eula') }
     it { should contain_package("IntelliJ-IDEA-IU-#{version}").with_source("http://download.jetbrains.com/idea/ideaIU-#{version}.dmg") }
   end
 
@@ -41,7 +41,7 @@ describe 'intellij' do
 
     it { should contain_class('intellij') }
 
-    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg') }
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg_eula') }
     it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
   end
 end
