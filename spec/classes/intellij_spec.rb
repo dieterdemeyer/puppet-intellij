@@ -15,18 +15,18 @@ describe 'intellij' do
   context 'with default parameters' do
     let (:params) { { } }
 
-    version = '12.1.4'
+    version = '13.1'
 
     it { should contain_class('intellij') }
 
     it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_provider('appdmg_eula') }
-    it { should contain_package("IntelliJ-IDEA-IC-12.1.4").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
+    it { should contain_package("IntelliJ-IDEA-IC-#{version}").with_source("http://download.jetbrains.com/idea/ideaIC-#{version}.dmg") }
   end
 
   context 'with edition => ultimate and default version' do
     let (:params) { { :edition => 'ultimate' } }
 
-    version = '12.1.4'
+    version = '13.1'
 
     it { should contain_class('intellij') }
 
