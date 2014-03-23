@@ -4,10 +4,10 @@
 #
 #  class { 'intellij':
 #    edition => 'community',
-#    version => '13.1'
+#    version => '13.1.1'
 #  }
 #
-class intellij($edition='community', $version='13.1') {
+class intellij($edition='community', $version='13.1.1') {
 
   case $edition {
     'community': {
